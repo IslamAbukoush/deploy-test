@@ -1,0 +1,10 @@
+.mainContainer {
+    margin-left: 330px;
+    width: calc(100% - 330px);
+    overflow-y: auto;
+    position: fixed;
+    height: calc(100% - 90px);
+    top: 75px;
+    padding: 0 15px;
+    font-family: "Space Grotesk";
+}

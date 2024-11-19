@@ -1,0 +1,71 @@
+.logoContainer {
+    @apply w-full flex flex-col;
+    background: rgba(2, 2, 2, 1);
+    color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.04);
+    font-family: "Space Grotesk";
+    height: 60px;
+    margin-bottom: 15px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 345px 1fr 1fr;
+    grid-template-areas: "logo path search";
+    z-index: 5;
+    background: transparent;
+}
+
+.logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+.img {
+    height: 40px;
+    margin-left: 10px;
+}
+.img_light{
+    filter: invert(1);
+}
+
+.path {
+    grid-area: path;
+    color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+.path>img {
+    height: 20px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+
+.loopContainer {
+    grid-area: search;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loop {
+    width: 80%;
+    height: 30px;
+    background: rgba(21, 21, 21, 1);
+    color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    /* gap: 10px; */
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    border-radius: 18px;
+    padding-left: 15px;
+}
+
+.loop>img {
+    width: 20px;
+    margin-right: 10px;
+}

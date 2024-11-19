@@ -1,0 +1,97 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+    /* Adjust as needed */
+}
+
+#bubble-chart {
+    border: 1px solid #ccc;
+    /* Optional border for visibility */
+    overflow-y: scroll;
+}
+
+.bubble {
+    transition: filter 200ms ease-in;
+    overflow: hidden;
+}
+
+.bubble:hover {
+    cursor: pointer;
+    filter: brightness(1.4);
+}
+
+.marketCap,
+.percentage24h {
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 18px;
+    position: absolute;
+    padding: 10px;
+    transition: filter, transform 200ms ease-in;
+}
+
+.marketCap {
+    top: 5px;
+    left: 30px;
+}
+
+.percentage24h {
+    top: 5px;
+    left: 230px;
+}
+
+.marketCap:hover,
+.percentage24h:hover {
+    transform: scale(1.05);
+    filter: brightness(1.3);
+}
+
+.infoWindow {
+    position: fixed;
+    top: 150px;
+    right: 12%;
+    background: rgba(21, 21, 21, 1);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 18px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 500px;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+
+.infoWindow_light {
+    background-color: #C9C9C9;
+    color: black;
+}
+
+.close {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close:hover {
+    background: rgb(34, 34, 34);
+    transform: scale(1.03);
+}
+
+.image {
+    overflow: hidden;
+}
+
+.cryptoImage {
+    width: 30px;
+}

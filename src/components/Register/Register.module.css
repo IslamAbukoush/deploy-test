@@ -1,0 +1,205 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.arrow {
+    width: 15px;
+}
+
+.arrowContainer {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 100%;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 36px;
+    width: 500px;
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    /* padding-top: 40px; */
+}
+
+.navigation {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 10%;
+}
+
+.illustration {
+    width: 200px;
+}
+
+.banner>h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5%;
+    width: 50%;
+}
+
+.h1_dark {
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.loginContainer>h1>img {
+    width: 20px;
+}
+
+.account {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.account>div>input {
+    border: 1px solid rgba(209, 209, 209, 0.5);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.06)) drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+    border-radius: 60px;
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin: 10px 0;
+    padding-left: 20px
+}
+
+.account>div>label {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.account_light>div>input {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.account_light>div>label {
+    color: black;
+}
+
+
+.account>div {
+    width: 45%;
+}
+
+.first {
+    flex-basis: 100%;  /* Forces the element to take up a full line */
+    display: flex;
+    flex-direction: column;
+}
+.first>input {
+    width: 45% !important;
+    background-color: green;
+}
+
+.forgot {
+    color: #BDD8B5;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+}
+
+.remember_label {
+    font-size: 16px;
+}
+
+
+.remember>input {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+    border: 3px solid #D0D0D0;
+    border-radius: 100%;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    transition: box-shadow 400ms ease;
+}
+
+.remember>input:checked {
+    box-shadow: inset 0 0 10px #999999;
+}
+
+.logIn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 65px;
+    background: rgba(105, 117, 101, 0.5);
+    border: 1px solid rgba(209, 209, 209, 0.04);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1), inset 0px 1px 0px rgba(255, 255, 255, 0.25);
+    border-radius: 60px;
+}
+.logIn_light {
+    background: rgba(28, 41, 26, 0.599);
+}
+.logIn:hover {
+    filter: brightness(2);
+}
+
+
+@media screen and (max-width: 980px) {
+    .loginContainer {
+        /* background-color: red; */
+        width: 50%;
+    }
+    .banner {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    .banner>h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .logIn {
+        padding: 4px 30px;
+    }
+}
+
+/* Need mobile version after 620px */
+
+@media screen and (max-width: 620px) {
+    /* Mobile version */
+}

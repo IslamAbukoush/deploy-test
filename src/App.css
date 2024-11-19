@@ -1,0 +1,82 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* background-color: red; */
+  /* z-index: -1; */
+}
+
+html,
+body,
+#app,
+#app>div {
+  height: 100%
+}
+
+#root {
+  display: flex;
+  /* width: auto; */
+  /* height: 100vh; */
+  min-height: 100vh;
+  /* z-index: 10; */
+}
+
+.app-container {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  background: rgba(2, 2, 2, 1);
+  color: aliceblue;
+  /* z-index: 0; */
+}
+
+.content-container {
+  /* flex-shrink: 0; */
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Custom scrollbar for Webkit browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 10px;          /* Width of the scrollbar */
+  height: 10px;         /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;  /* Scrollbar thumb color */
+  border-radius: 10px;     /* Rounded corners */
+  border: 2px solid #333;  /* Border to create spacing effect */
+}
+
+::-webkit-scrollbar-track {
+  background: #222;        /* Scrollbar track color */
+  border-radius: 10px;     /* Rounded corners */
+}
+
+/* Custom scrollbar for Firefox */
+* {
+  scrollbar-width: thin;             /* Scrollbar width */
+  scrollbar-color: #555 #222;        /* Thumb and track colors */
+}
+
+.thing {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+.thing_black {
+  background-color: black;
+}
+
+.invert {
+  filter: invert(1);
+}
